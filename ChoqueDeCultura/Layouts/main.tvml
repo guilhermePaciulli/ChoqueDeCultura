@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+  <showcaseTemplate>
+    <background>
+      <img src="images/background.jpg" />
+    </background>
+    <banner>
+      <title></title>
+      <row>
+        <button></button>
+      </row>
+    </banner>
+    <carousel>
+      <section>
+        <lockup></lockup>
+      </section>
+    </carousel>
+  </showcaseTemplate>
+</document>

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		BD823C0420D051AC00DFCECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD823C0320D051AC00DFCECE /* AppDelegate.swift */; };
 		BD823C0720D051B100DFCECE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD823C0620D051B100DFCECE /* Assets.xcassets */; };
+		BD823C0F20D057B200DFCECE /* choque.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD823C0E20D057B200DFCECE /* choque.jpg */; };
+		BD823C1220D058F300DFCECE /* main.tvml in Resources */ = {isa = PBXBuildFile; fileRef = BD823C1120D058F300DFCECE /* main.tvml */; };
+		BD823C1620D05F2100DFCECE /* ResourceLoader.js in Resources */ = {isa = PBXBuildFile; fileRef = BD823C1420D05F2100DFCECE /* ResourceLoader.js */; };
+		BD823C1720D05F2100DFCECE /* ResourceLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD823C1520D05F2100DFCECE /* ResourceLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +21,10 @@
 		BD823C0520D051AC00DFCECE /* application.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = application.js; sourceTree = "<group>"; };
 		BD823C0620D051B100DFCECE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BD823C0820D051B100DFCECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD823C0E20D057B200DFCECE /* choque.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = choque.jpg; sourceTree = "<group>"; };
+		BD823C1120D058F300DFCECE /* main.tvml */ = {isa = PBXFileReference; lastKnownFileType = text; path = main.tvml; sourceTree = "<group>"; };
+		BD823C1420D05F2100DFCECE /* ResourceLoader.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; name = ResourceLoader.js; path = ChoqueDeCultura/ResourceLoader.js; sourceTree = SOURCE_ROOT; };
+		BD823C1520D05F2100DFCECE /* ResourceLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResourceLoader.swift; path = ChoqueDeCultura/ResourceLoader.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,29 @@
 				BD823C0320D051AC00DFCECE /* AppDelegate.swift */,
 				BD823C0520D051AC00DFCECE /* application.js */,
 				BD823C0620D051B100DFCECE /* Assets.xcassets */,
+				BD823C1020D057B800DFCECE /* images */,
 				BD823C0820D051B100DFCECE /* Info.plist */,
+				BD823C1420D05F2100DFCECE /* ResourceLoader.js */,
+				BD823C1520D05F2100DFCECE /* ResourceLoader.swift */,
+				BD823C1320D058F800DFCECE /* Layouts */,
 			);
 			path = ChoqueDeCultura;
+			sourceTree = "<group>";
+		};
+		BD823C1020D057B800DFCECE /* images */ = {
+			isa = PBXGroup;
+			children = (
+				BD823C0E20D057B200DFCECE /* choque.jpg */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		BD823C1320D058F800DFCECE /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				BD823C1120D058F300DFCECE /* main.tvml */,
+			);
+			path = Layouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -114,7 +142,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD823C1220D058F300DFCECE /* main.tvml in Resources */,
+				BD823C0F20D057B200DFCECE /* choque.jpg in Resources */,
 				BD823C0720D051B100DFCECE /* Assets.xcassets in Resources */,
+				BD823C1620D05F2100DFCECE /* ResourceLoader.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD823C1720D05F2100DFCECE /* ResourceLoader.swift in Sources */,
 				BD823C0420D051AC00DFCECE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
