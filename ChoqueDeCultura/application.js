@@ -61,6 +61,19 @@ function pushPage(document) {
     }
 }
 
+function loadImage(extension) {
+    return baseURL + extension
+}
+
+function playMediaExternal(videourl, mediaType) {
+    var singleVideo = new MediaItem(mediaType, videourl);
+    var videoList = new Playlist();
+    videoList.push(singleVideo);
+    var myPlayer = new Player();
+    myPlayer.playlist = videoList;
+    myPlayer.play();
+}
+
 function playMedia(extension, mediaType) {
     var videourl = baseURL + extension;
     var singleVideo = new MediaItem(mediaType, videourl);
@@ -73,7 +86,8 @@ function playMedia(extension, mediaType) {
 
 App.onLaunch = function(options) {
     baseURL = options.BASEURL;
-    var extension = "/templates/mediaItems.xml";
+    loadingTemplate();
+    var extension = "templates/main.tvml";
     getDocument(extension);
 }
 
