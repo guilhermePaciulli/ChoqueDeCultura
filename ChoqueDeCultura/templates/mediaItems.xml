@@ -3,7 +3,7 @@
 <!--        <audio>-->
 <!--            <asset src="URL to music file" />-->
 <!--        </audio-->
-        <img src="../imgs/bg.jpg" />
+        <img src="/imgs/bg.jpg" />
     </background>
     <stackTemplate>
         <banner>
@@ -13,11 +13,11 @@
             <shelf>
                 <section>
                     <lockup>
-                        <img src="../imgs/v1.png"/>
+                        <img src="/imgs/v1.png"/>
                         <title>Achou que não ia ter javascript em coisa da Apple?</title>
                     </lockup>
                     <lockup>
-                        <img src="../imgs/v2.png"/>
+                        <img src="/imgs/v2.png"/>
                         <title>É o jeito dele rogerinho</title>
                     </lockup>
                 </section>

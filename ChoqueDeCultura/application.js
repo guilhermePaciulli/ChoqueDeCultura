@@ -73,7 +73,7 @@ function playMedia(extension, mediaType) {
 
 App.onLaunch = function(options) {
     baseURL = options.BASEURL;
-    var extension = "templates/mediaItems.xml";
+    var extension = "/templates/mediaItems.xml";
     getDocument(extension);
 }
 
