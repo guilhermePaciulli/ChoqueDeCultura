@@ -15,6 +15,10 @@
 		BD823C2120D1695900DFCECE /* v4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BD823C1D20D1695800DFCECE /* v4.jpg */; };
 		BD823C2220D1695900DFCECE /* v2.png in Resources */ = {isa = PBXBuildFile; fileRef = BD823C1E20D1695900DFCECE /* v2.png */; };
 		BD823C2320D1695900DFCECE /* v1.png in Resources */ = {isa = PBXBuildFile; fileRef = BD823C1F20D1695900DFCECE /* v1.png */; };
+		BD823C2720D186D300DFCECE /* video1.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD823C2520D186D200DFCECE /* video1.mp4 */; };
+		BD823C2820D186D300DFCECE /* video2.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD823C2620D186D300DFCECE /* video2.mp4 */; };
+		BD823C2C20D186F200DFCECE /* video4.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD823C2A20D186F100DFCECE /* video4.mp4 */; };
+		BD823C2D20D186F200DFCECE /* video3.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = BD823C2B20D186F200DFCECE /* video3.mp4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		BD823C1D20D1695800DFCECE /* v4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = v4.jpg; sourceTree = "<group>"; };
 		BD823C1E20D1695900DFCECE /* v2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = v2.png; sourceTree = "<group>"; };
 		BD823C1F20D1695900DFCECE /* v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = v1.png; sourceTree = "<group>"; };
+		BD823C2520D186D200DFCECE /* video1.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video1.mp4; sourceTree = "<group>"; };
+		BD823C2620D186D300DFCECE /* video2.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video2.mp4; sourceTree = "<group>"; };
+		BD823C2A20D186F100DFCECE /* video4.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video4.mp4; sourceTree = "<group>"; };
+		BD823C2B20D186F200DFCECE /* video3.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = video3.mp4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,7 @@
 				BD823C0620D051B100DFCECE /* Assets.xcassets */,
 				BD823C1020D057B800DFCECE /* imgs */,
 				BD823C0820D051B100DFCECE /* Info.plist */,
+				BD823C2920D186D700DFCECE /* videos */,
 				BD823C2420D16B3800DFCECE /* templates */,
 			);
 			path = ChoqueDeCultura;
@@ -89,6 +98,17 @@
 				BD823C1A20D168A200DFCECE /* main.tvml */,
 			);
 			path = templates;
+			sourceTree = "<group>";
+		};
+		BD823C2920D186D700DFCECE /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				BD823C2520D186D200DFCECE /* video1.mp4 */,
+				BD823C2620D186D300DFCECE /* video2.mp4 */,
+				BD823C2B20D186F200DFCECE /* video3.mp4 */,
+				BD823C2A20D186F100DFCECE /* video4.mp4 */,
+			);
+			path = videos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,12 +168,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD823C2D20D186F200DFCECE /* video3.mp4 in Resources */,
 				BD823C1B20D168A200DFCECE /* main.tvml in Resources */,
+				BD823C2720D186D300DFCECE /* video1.mp4 in Resources */,
 				BD823C2120D1695900DFCECE /* v4.jpg in Resources */,
 				BD823C1920D0612900DFCECE /* bg.jpg in Resources */,
 				BD823C2320D1695900DFCECE /* v1.png in Resources */,
+				BD823C2820D186D300DFCECE /* video2.mp4 in Resources */,
 				BD823C2220D1695900DFCECE /* v2.png in Resources */,
 				BD823C2020D1695900DFCECE /* v3.png in Resources */,
+				BD823C2C20D186F200DFCECE /* video4.mp4 in Resources */,
 				BD823C0720D051B100DFCECE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
