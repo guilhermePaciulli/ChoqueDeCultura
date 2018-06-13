@@ -20,6 +20,14 @@
                         <img src="https://guilhermepaciulli.github.io/ChoqueDeCultura/imgs/v2.png" width="182" height="274"/>
                         <title>É o jeito dele rogerinho</title>
                     </lockup>
+                    <lockup onselect="playMediaExternal('https://guilhermepaciulli.github.io/ChoqueDeCultura/videos/video3.mp4', 'video')">
+                        <img src="https://guilhermepaciulli.github.io/ChoqueDeCultura/imgs/v3.png" width="182" height="274"/>
+                        <title>SHOW!</title>
+                    </lockup>
+                    <lockup onselect="playMediaExternal('https://guilhermepaciulli.github.io/ChoqueDeCultura/videos/video4.mp4', 'video')">
+                        <img src="https://guilhermepaciulli.github.io/ChoqueDeCultura/imgs/v4.png" width="182" height="274"/>
+                        <title>SPIN OFF</title>
+                    </lockup>
                 </section>
             </shelf>
         </collectionList>
