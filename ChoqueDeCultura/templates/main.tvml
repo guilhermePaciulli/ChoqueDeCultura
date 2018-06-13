@@ -1,7 +1,7 @@
 <document>
     <stackTemplate>
         <background>
-            <audio><asset src="https://guilhermepaciulli.github.io/ChoqueDeCultura/bgMusic.mp3" /></audio
+            <audio><asset src="https://guilhermepaciulli.github.io/ChoqueDeCultura/bgMusic.mp3" /></audio>
             <img src="https://guilhermepaciulli.github.io/ChoqueDeCultura/imgs/bg.jpg" />
         </background>
         <banner>
