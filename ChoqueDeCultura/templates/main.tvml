@@ -5,7 +5,7 @@
             <img src="https://guilhermepaciulli.github.io/ChoqueDeCultura/imgs/bg.jpg" />
         </background>
         <banner>
-            <title style="color:rgb(255, 255, 255)">Choque de cultura, The best of</title>
+            <title style="color:rgb(255, 255, 255, 1)">Choque de cultura, The best of</title>
         </banner>
         <collectionList>
             <shelf>
