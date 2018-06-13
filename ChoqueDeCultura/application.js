@@ -33,7 +33,7 @@
 var baseURL;
 
 function loadingTemplate() {
-    var template = '<document><loadingTemplate><activityIndicator><text>Loading</text></activityIndicator></loadingTemplate></document>';
+    var template = '<document><loadingTemplate><activityIndicator><text>Programa cultural</text></activityIndicator></loadingTemplate></document>';
     var templateParser = new DOMParser();
     var parsedTemplate = templateParser.parseFromString(template, "application/xml");
     navigationDocument.pushDocument(parsedTemplate);
