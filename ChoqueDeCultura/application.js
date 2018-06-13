@@ -30,55 +30,53 @@
  * The location attribute is automatically added to the object and represents
  * the URL that was used to retrieve the application JavaScript.
  */
+var baseURL;
+
+function loadingTemplate() {
+    var template = '<document><loadingTemplate><activityIndicator><text>Loading</text></activityIndicator></loadingTemplate></document>';
+    var templateParser = new DOMParser();
+    var parsedTemplate = templateParser.parseFromString(template, "application/xml");
+    navigationDocument.pushDocument(parsedTemplate);
+}
+
+function getDocument(extension) {
+    var templateXHR = new XMLHttpRequest();
+    var url = baseURL + extension;
+    
+    loadingTemplate();
+    templateXHR.responseType = "document";
+    templateXHR.addEventListener("load", function() {pushPage(templateXHR.responseXML);}, false);
+    templateXHR.open("GET", url, true);
+    templateXHR.send();
+}
+
+function pushPage(document) {
+    var currentDoc = getActiveDocument();
+    if (currentDoc.getElementsByTagName("loadingTemplate").item(0) == null) {
+        console.log("no loading");
+        navigationDocument.pushDocument(document);
+    } else {
+        navigationDocument.replaceDocument(document, currentDoc);
+        console.log("loading");
+    }
+}
+
+function playMedia(extension, mediaType) {
+    var videourl = baseURL + extension;
+    var singleVideo = new MediaItem(mediaType, videourl);
+    var videoList = new Playlist();
+    videoList.push(singleVideo);
+    var myPlayer = new Player();
+    myPlayer.playlist = videoList;
+    myPlayer.play();
+}
+
 App.onLaunch = function(options) {
-    evaluateScripts(options.initialJSDependencies,
-      function(success){
-        if (success) {
-          resourceLoader = new ResourceLoaderJS(NativeResourceLoader.create());
-          var initialDoc = resourceLoader.getDocument("main.tvml");
-          navigationDocument.pushDocument(initialDoc);
-        } else {
-          var alert = createAlert("Evaluate Scripts Error", "Error attempting to evaluate the external JS files.");
-          navigationDocument.presentModal(alert);
-          throw ("Playback Example: unable to evaluate scripts.");
-        }
-      });
+    baseURL = options.BASEURL;
+    var extension = "templates/mediaItems.xml";
+    getDocument(extension);
 }
 
-
-App.onWillResignActive = function() {
-
-}
-
-App.onDidEnterBackground = function() {
-
-}
-
-App.onWillEnterForeground = function() {
-
-}
-
-App.onDidBecomeActive = function() {
-
-}
-
-App.onWillTerminate = function() {
-
-}
-
-var createAlert = function(title, description) {
-
-    var alertString = `<?xml version="1.0" encoding="UTF-8" ?>
-        <document>
-          <alertTemplate>
-            <title>${title}</title>
-            <description>${description}</description>
-          </alertTemplate>
-        </document>`
-
-    var parser = new DOMParser();
-
-    var alertDoc = parser.parseFromString(alertString, "application/xml");
-
-    return alertDoc
+App.onExit = function() {
+    console.log("exited");
 }

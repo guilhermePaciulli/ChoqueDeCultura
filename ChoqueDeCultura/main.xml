@@ -1,0 +1,27 @@
+<document>
+    <background>
+<!--        <audio>-->
+<!--            <asset src="URL to music file" />-->
+<!--        </audio-->
+        <img src="../imgs/bgs.jpg" />
+    </background>
+    <stackTemplate>
+        <banner>
+            <title>Choque de cultura, The best of</title>
+        </banner>
+        <collectionList>
+            <shelf>
+                <section>
+                    <lockup onselect="playMedia('path to video', 'video')">
+                        <img src="../imgs/v1.png" width="182" height="274"/>
+                        <title>Achou que não ia ter javascript em coisa da Apple?</title>
+                    </lockup>
+                    <lockup onselect="playMedia('path to video', 'video')">
+                        <img src="../imgs/v2.png" width="182" height="274" />
+                        <title>É o jeito dele rogerinho</title>
+                    </lockup>
+                </section>
+            </shelf>
+        </collectionList>
+    </stackTemplate>
+</document>
